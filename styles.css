@@ -1,0 +1,64 @@
+body {
+    background-color: #ffe4e1;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #ff69b4;
+    font-size: 3em;
+}
+
+.teddy-container {
+    position: relative;
+    display: inline-block;
+}
+
+.teddy-image {
+    width: 250px;
+}
+
+.hearts {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-25%);
+}
+
+.heart {
+    width: 100px;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.message {
+    font-size: 1.5em;
+    color: #ff1493;
+    margin-top: 20px;
+}
+
+.next-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #ff1493;
+}
